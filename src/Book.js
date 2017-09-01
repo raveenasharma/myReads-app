@@ -5,10 +5,7 @@ class Book extends Component {
     state = {
         authors: ""
     }
-    componentWillReceiveProps() {
-        book.authors.map((author) => {this.state.authors.concat(author).concat(", "); return author});
-        
-    }
+    
     render() {
         const { book, onChangeShelf } = this.props
         return (
